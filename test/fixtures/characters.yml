@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  series_1: false
+  series_2: false
+
+two:
+  name: MyString
+  series_1: false
+  series_2: false
