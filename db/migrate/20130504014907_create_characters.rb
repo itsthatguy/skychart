@@ -4,6 +4,7 @@ class CreateCharacters < ActiveRecord::Migration
       t.string :name
       t.boolean :series_1
       t.boolean :series_2
+      t.integer :element_id
 
       t.timestamps
     end
