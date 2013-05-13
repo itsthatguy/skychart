@@ -1,0 +1,17 @@
+= render :partial => "flash", :locals => {:flash => flash}
+
+= form_for @character do |f|
+
+  Name:
+  = f.text_field :name
+
+  Series 1:
+  = f.check_box :series_1
+
+  Series 2:
+  = f.check_box :series_2
+
+  Element:
+  = collection_select(:character, :element_id, Element.all, :id, :name)
+
+  = f.submit
