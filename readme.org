@@ -1,0 +1,11 @@
+STARTUP
+
+To import existing data, after the initial `rake db:migrate`, lib/import.rb will read the original middleman file from app/views/characters/index.html.haml and import the 85 characters there, and the elements, into the local DB.
+
+Alternatively there's terrible support for manually entering new characters by hand at characters/new.
+
+TODO
+
+- If the import will be more than a one-time thing, the import.rb file should be wrapped as a Rake task.
+
+- Candidate Rob Ares pointed out that the Series data should be modelled separately to accommodate new future series. (There's already a Series 3 in use at skylanderscharacters.com.)
